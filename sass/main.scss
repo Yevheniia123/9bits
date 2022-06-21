@@ -1,0 +1,183 @@
+body {
+  font-family: "Roboto";
+}
+ul {
+  margin: 0;
+}
+
+input,
+textarea,
+select {
+  border: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+.menu {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 0;
+}
+.menu-button {
+  border-radius: 100%;
+  margin-right: 10px;
+
+  padding: 15px;
+  color: white;
+  background-color: slategrey;
+  border-color: slategrey;
+
+  width: 50px;
+  height: 50px;
+}
+.menu-item {
+  flex-direction: row;
+  display: flex;
+  background-color: rgb(240, 239, 239);
+  margin-bottom: 3px;
+  border-radius: 50px 0 0 50px;
+  min-width: 301px;
+
+  &:focus,
+  &:hover {
+    font-weight: 700;
+  }
+
+  &:focus > .menu-button,
+  &:hover > .menu-button {
+    background-color: rgb(206, 1, 1);
+    border-color: rgb(206, 1, 1);
+  }
+}
+.active {
+  font-weight: 700;
+
+  & > .menu-button,
+  & > .menu-button {
+    background-color: rgb(206, 1, 1);
+    border-color: rgb(206, 1, 1);
+  }
+}
+
+.disabled {
+  pointer-events: none;
+  color: rgb(180, 178, 178);
+  & > button {
+    background-color: rgb(240, 239, 239);
+    border-color: rgb(240, 239, 239);
+  }
+}
+.menu-button-value {
+  text-transform: uppercase;
+}
+.content {
+  padding: 15px;
+  padding-top: 0;
+
+  background-color: rgb(240, 239, 239);
+}
+
+.form {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-block {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 15px;
+  padding-top: 0;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+::-webkit-input-placeholder {
+  color: rgb(189, 186, 186);
+}
+:-moz-placeholder {
+  color: rgb(189, 186, 186);
+}
+::-moz-placeholder {
+  color: rgb(189, 186, 186);
+}
+:-ms-input-placeholder {
+  color: rgb(189, 186, 186);
+}
+
+.form-block-item {
+  margin-bottom: 20px;
+  padding: 15px;
+}
+.form-block-text {
+  text-align: justify;
+  margin: 10px;
+}
+.option {
+  color: rgb(189, 186, 186);
+}
+.start-date,
+.finish-date {
+  padding: 15px;
+}
+.date {
+  display: flex;
+  justify-content: space-between;
+}
+.price {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.price > label {
+  margin-right: 40px;
+}
+.promotion {
+  margin-top: 20px;
+}
+.title {
+  margin-top: 12px;
+}
+.title::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(255, 251, 251);
+  margin-top: 10px;
+}
+
+.is-hidden {
+  display: none;
+}
+
+///////table
+
+/* Shift the heading text to the left, by default it is centered */
+table caption {
+  text-align: left;
+}
+
+/* We "collapse" the frames of adjacent cells */
+table {
+  border-collapse: collapse;
+}
+
+/* 
+  Add a border and padding to the cells, the distance from the content to the border.
+  To control the vertical position, the caption-side property is used.
+*/
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #2a2a2a;
+}
+.tabs-content {
+  display: none;
+}
+.tabs-content.active {
+  display: flex;
+}

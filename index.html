@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <ul class="menu">
+        <li class="menu-item tabs-nav active" data-tab="#tab1" id="1">
+          <button class="menu-button">1</button>
+          <p class="menu-button-value">definition</p>
+        </li>
+        <li class="menu-item tabs-nav" data-tab="#tab2">
+          <button class="menu-button" id="2">2</button>
+          <p class="menu-button-value">choose products</p>
+        </li>
+        <li class="menu-item tabs-nav" data-tab="#tab3">
+          <button class="menu-button">3</button>
+          <p class="menu-button-value">exclude products</p>
+        </li>
+        <li class="menu-item tabs-nav disabled" data-tab="#tab4">
+          <button class="menu-button">4</button>
+          <p class="menu-button-value">bonus products</p>
+        </li>
+        <li class="menu-item tabs-nav disabled" data-tab="#tab5">
+          <button class="menu-button">5</button>
+          <p class="menu-button-value">products limits</p>
+        </li>
+        <li class="menu-item tabs-nav" data-tab="#tab6">
+          <button class="menu-button">6</button>
+          <p class="menu-button-value">choose clients</p>
+        </li>
+        <li class="menu-item tabs-nav" data-tab="#tab7">
+          <button class="menu-button">7</button>
+          <p class="menu-button-value">exclude clients</p>
+        </li>
+        <li class="menu-item tabs-nav" data-tab="#tab8">
+          <button class="menu-button">8</button>
+          <p class="menu-button-value">clients limits</p>
+        </li>
+        <li class="menu-item tabs-nav" data-tab="#tab9">
+          <button class="menu-button">9</button>
+          <p class="menu-button-value">summary</p>
+        </li>
+      </ul>
+
+      <div class="content">
+        <form class="form tabs-content active" id="tab1">
+          <div class="form-block">
+            <h2 class="title">Description</h2>
+            <input
+              required
+              type="text"
+              placeholder="Marketing name"
+              data-name="marketingName"
+              class="form-block-item input-name marketingName"
+            />
+            <input
+              required
+              type="text"
+              placeholder="Technical name"
+              data-name="technicalName"
+              class="form-block-item technicalName"
+            />
+            <textarea
+              required
+              placeholder="Description"
+              class="form-block-item"
+            ></textarea>
+            <h2 class="title">Catalog promotion tutorial</h2>
+            <p class="form-block-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+              accusantium unde nostrum eos maiores. Facilis, repellat?
+              Reiciendis, quidem dignissimos, deleniti ipsum, blanditiis quas
+              aliquid corporis error aspernatur sit harum deserunt officiis!
+              Ratione tempora necessitatibus eligendi quos, doloribus harum
+              culpa quia!
+            </p>
+            <p class="form-block-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+              accusantium unde nostrum eos maiores. Facilis, repellat?
+              Reiciendis, quidem dignissimos, deleniti ipsum, blanditiis quas
+              aliquid corporis error aspernatur sit harum deserunt officiis!
+              Ratione tempora necessitatibus eligendi quos, doloribus harum
+              culpa quia!
+            </p>
+            <p class="form-block-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+              accusantium unde nostrum eos maiores. Facilis, repellat?
+              Reiciendis, quidem dignissimos, deleniti ipsum, blanditiis quas
+              aliquid corporis error aspernatur sit harum deserunt officiis!
+              Ratione tempora necessitatibus eligendi quos, doloribus harum
+              culpa quia!
+            </p>
+          </div>
+          <div class="form-block">
+            <h2 class="title">Conditions</h2>
+            <select type="text" placeholder="Portal" class="form-block-item">
+              <option>Portal</option>
+            </select>
+            <select
+              type="text"
+              placeholder="Type"
+              class="form-block-item option"
+            >
+              <option>Type</option>
+            </select>
+            <input
+              required
+              type="text"
+              placeholder="Benefit amount"
+              class="form-block-item"
+              disabled
+            />
+            <div class="date">
+              <input
+                type="date"
+                placeholder="start date"
+                name="start date"
+                class="start-date"
+              />
+              <input
+                type="datetime"
+                placeholder="finish date"
+                name="finish date"
+                class="finish-date"
+              />
+            </div>
+            <div class="price">
+              <label><input required type="radio" />Bussiness conditions</label>
+              <label><input required type="radio" />Base price 100%</label>
+            </div>
+            <label
+              ><input required type="checkbox" checked />Base price 100%</label
+            >
+            <label
+              ><input required type="checkbox" class="promotion" />Back
+              promotion</label
+            >
+          </div>
+          <!-- <button type="submit" class="submit-btn is-hidden">Summary</button> -->
+        </form>
+        <p class="textBox tabs-content" id="tab2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem
+          hic soluta fuga! Id esse tenetur, labore laboriosam excepturi odit
+          accusantium sint mollitia incidunt eum omnis beatae dignissimos ut cum
+          veritatis officiis atque voluptatem eligendi corrupti doloribus eaque?
+          Eligendi provident, dolorem ipsa reiciendis sint ipsum illo modi
+          libero unde iusto voluptas voluptatibus consequuntur distinctio quo
+          fuga, neque veniam odit cumque accusantium nobis ad. Ea veritatis
+          sequi illo repellat voluptatibus, eius praesentium labore quas
+          explicabo reiciendis esse optio sunt! Iusto, suscipit quam? Sequi
+          facere dignissimos facilis possimus, dolor doloribus porro id
+          consectetur incidunt. Laborum delectus odit veritatis officiis
+          adipisci esse, voluptates, sunt in necessitatibus sint error cum nobis
+          quos possimus commodi accusamus similique nam et eius rerum! Enim esse
+          porro nemo ratione mollitia praesentium optio, doloremque deleniti ex,
+          odio magnam sunt omnis, facere earum. Sapiente dolorum est illum eum
+          corrupti iste! Blanditiis, aperiam ad beatae nemo quae quis non illum
+          expedita!
+        </p>
+        <p class="textBox tabs-content" id="tab3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem
+          hic soluta fuga! Id esse tenetur, labore laboriosam excepturi odit
+          accusantium sint mollitia incidunt eum omnis beatae dignissimos ut cum
+          veritatis officiis atque voluptatem eligendi corrupti doloribus eaque?
+          Eligendi provident, dolorem ipsa reiciendis sint ipsum illo modi
+          libero unde iusto voluptas voluptatibus consequuntur distinctio quo
+          fuga, neque veniam odit cumque accusantium nobis ad. Ea veritatis
+          sequi illo repellat voluptatibus, eius praesentium labore quas
+          explicabo reiciendis esse optio sunt!
+        </p>
+        <p class="textBox tabs-content" id="tab4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem
+          hic soluta fuga! Id esse tenetur, labore laboriosam excepturi odit
+          accusantium sint mollitia incidunt eum omnis beatae dignissimos ut cum
+          veritatis officiis atque voluptatem eligendi corrupti doloribus eaque?
+          Eligendi provident, dolorem ipsa reiciendis sint ipsum illo modi
+          libero unde iusto voluptas voluptatibus consequuntur distinctio quo
+          fuga, neque veniam odit cumque accusantium nobis ad. Ea veritatis
+          sequi illo repellat voluptatibus, eius praesentium labore quas
+          explicabo reiciendis esse optio sunt! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Atque quidem hic soluta fuga! Id esse
+          tenetur, labore laboriosam excepturi odit accusantium sint mollitia
+          incidunt eum omnis beatae dignissimos ut cum veritatis officiis atque
+          voluptatem eligendi corrupti doloribus eaque? Eligendi provident,
+          dolorem ipsa reiciendis sint ipsum illo modi libero unde iusto
+          voluptas voluptatibus consequuntur distinctio quo fuga, neque veniam
+          odit cumque accusantium nobis ad. Ea veritatis sequi illo repellat
+          voluptatibus, eius praesentium labore quas explicabo reiciendis esse
+          optio sunt!
+        </p>
+        <p class="textBox tabs-content" id="tab5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem
+          hic soluta fuga! Id esse tenetur, labore laboriosam excepturi odit
+          accusantium sint mollitia incidunt eum omnis beatae dignissimos ut cum
+          veritatis officiis atque voluptatem eligendi corrupti doloribus eaque?
+        </p>
+        <p class="textBox tabs-content" id="tab6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem
+          hic soluta fuga! Id esse tenetur, labore laboriosam excepturi odit
+          accusantium sint mollitia incidunt eum omnis beatae dignissimos ut cum
+          veritatis officiis atque voluptatem eligendi corrupti doloribus eaque?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem
+          hic soluta fuga! Id esse tenetur, labore laboriosam excepturi odit
+          accusantium sint mollitia incidunt eum omnis beatae dignissimos ut cum
+          veritatis officiis atque voluptatem eligendi corrupti doloribus eaque?
+          Eligendi provident, dolorem ipsa reiciendis sint ipsum illo modi
+          libero unde iusto voluptas voluptatibus consequuntur distinctio quo
+          fuga, neque veniam odit cumque accusantium nobis ad. Ea veritatis
+          sequi illo repellat voluptatibus, eius praesentium labore quas
+          explicabo reiciendis esse optio sunt! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Atque quidem hic soluta fuga! Id esse
+          tenetur, labore laboriosam excepturi odit accusantium sint mollitia
+          incidunt eum omnis beatae dignissimos ut cum veritatis officiis atque
+          voluptatem eligendi corrupti doloribus eaque? Eligendi provident,
+          dolorem ipsa reiciendis sint ipsum illo modi libero unde iusto
+          voluptas voluptatibus consequuntur distinctio quo fuga, neque veniam
+          odit cumque accusantium nobis ad. Ea veritatis sequi illo repellat
+          voluptatibus, eius praesentium labore quas explicabo reiciendis esse
+          optio sunt!
+        </p>
+        <p class="textBox tabs-content" id="tab7">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem
+          hic soluta fuga! Id esse tenetur, labore laboriosam excepturi odit
+          accusantium sint mollitia incidunt eum omnis beatae dignissimos ut cum
+          veritatis officiis atque voluptatem eligendi corrupti doloribus eaque?
+        </p>
+        <p class="textBox tabs-content" id="tab8">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem
+          hic soluta fuga! Id esse tenetur, labore laboriosam excepturi odit
+          accusantium sint mollitia incidunt eum omnis beatae dignissimos ut cum
+          veritatis officiis atque voluptatem eligendi corrupti doloribus eaque?
+        </p>
+        <div class="total tabs-content" id="tab9">
+          <table>
+            <thead>
+              <tr>
+                <th>Nazwa promocji</th>
+                <th>Edytuj</th>
+                <th>Usuń</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>433</td>
+                <td>London - Paris</td>
+                <td>5 hours</td>
+              </tr>
+              <tr>
+                <td>701</td>
+                <td>New York - Chicago</td>
+                <td>7 hours</td>
+              </tr>
+              <tr>
+                <td>258</td>
+                <td>Oslo - Warsaw</td>
+                <td>4 hours</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="./js/form.js"></script>
+  </body>
+</html>
